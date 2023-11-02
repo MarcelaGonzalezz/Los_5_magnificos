@@ -13,9 +13,6 @@
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
 
   <!--navbar----------------------------------------------------------------->
   <nav class="navbar navbar-expand-lg bg-secondary p-0" id="nav">
@@ -98,8 +95,8 @@
 
       <form>
         <div class="nombre-apellido col-6">
-          <input type="text" id="nombre" class="input-padron" required placeholder="Nombre">
-          <input type="text" id="apellido" class="input-padron" required placeholder="Apellido">
+          <input type="text" id="nombre" class="input-padron" required placeholder="Nombre" pattern="[A-Za-z]+" title="Ingrese un nombre sin números ni caracteres especiales">
+          <input type="text" id="apellido" class="input-padron" required placeholder="Apellido" pattern="[A-Za-z]+" title="Ingrese un apellido sin números ni caracteres especiales">
         </div>
 
         <div class="text-center col-12">
@@ -107,8 +104,8 @@
         </div>
 
         <div class="titulo-casillas col-6">
-          <label type="text" id="cantidad" class="input-padron" required placeholder="Cantidad">Cantidad</label>
-          <label type="text" id="categoria" class="input-padron" required placeholder="Categoria">Categoria</label>
+          <label type="text" for="cantidad" class="input-padron" required placeholder="Cantidad">Cantidad</label>
+          <label type="text" for="cantidad" class="input-padron" required placeholder="Categoria">Categoria</label>
         </div>
 
         <div class="cantidad-categoria col-6 pt-0">
@@ -124,7 +121,11 @@
         <div class="monto-total col-6">
           <input type="text" id="monto" class="input-padron" placeholder="Total a Pagar: $">
         </div>
-
+        
+        <div class="col-12 text-center mt-3">
+          <button type="reset" class="btn btn-secondary ml-2">Borrar</button>
+          <button type="submit" class="btn btn-primary">Resumen</button>
+        </div>
 
       </form>
     </section>
@@ -159,6 +160,12 @@
     </div>
   </footer>
 
+
+  <!--Scripts--------------------------------------------------------------------------------------------->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
