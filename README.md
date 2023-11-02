@@ -1,2 +1,9 @@
-# Los_5_magnificos
-proyecto en grupo de Codo A codo
+# Los 5 Magníficos
+Proyecto grupal de Codo A codo
+
+# Integrantes
+
+- Marcela Gonzalez
+- Fausto Becerro
+- Miguel Pedreira
+- LOPEZ, Erick
