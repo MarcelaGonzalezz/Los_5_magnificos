@@ -13,10 +13,4 @@ body{
 footer{
     background-color: #273396;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }

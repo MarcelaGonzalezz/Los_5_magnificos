@@ -102,18 +102,18 @@
           <input type="text" id="apellido" class="input-padron" required placeholder="Apellido">
         </div>
 
-        <div class="text-center">
+        <div class="text-center col-12">
           <input type="email" id="correoelectronico" class="input-padron" required placeholder="Correo">
         </div>
 
         <div class="titulo-casillas col-6">
-          <input type="text" id="cantidad" class="input-padron" required placeholder="Cantidad">
-          <input type="text" id="categoria" class="input-padron" required placeholder="Categoria">
+          <label type="text" id="cantidad" class="input-padron" required placeholder="Cantidad">Cantidad</label>
+          <label type="text" id="categoria" class="input-padron" required placeholder="Categoria">Categoria</label>
         </div>
 
-        <div class="cantidad-categoria col-6">
-          <input type="text" id="cantidad" class="input-padron" required placeholder="Cantidad">
-          <select id="categoria" class="input-padron" required>
+        <div class="cantidad-categoria col-6 pt-0">
+          <input type="number" min="1" max="5" id="cantidad" class="input-padron col" required placeholder="Cantidad">
+          <select id="categoria" class="input-padron form-select col" required>
             <option value="General">General</option>
             <option value="Estudiante">Estudiante</option>
             <option value="Trainee">Trainee</option>
@@ -131,7 +131,7 @@
   </main>
 
   <!--footer--------------------------------------------------------------------------------------------->
-  <footer class="navbar-fixed-bottom">
+  <footer>
     <div class="container text-center p-3">
       <div class="row">
         <div class="col m-auto">
