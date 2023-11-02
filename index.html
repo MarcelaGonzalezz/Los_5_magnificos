@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conf Bs As</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link rel="stylesheet" href="assets/css/style-tickets.css">
+  <link rel="shortcut icon" href="assets/img/codoacodo.png" type="image/x-icon">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!--navbar----------------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg bg-secondary p-0" id="nav">
+    <div class="barra container-fluid barra my-auto px-5">
+      <a class="navbar-brand text-light m-0 " href="#nav">
+        <h3 class="d-inline-block align-text-center m-0">Conf Bs As</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#laconferencia">
+              <h6>La conferencia</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#oradores">
+              <h6>Los oradores</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#lugarfecha">
+              <h6>El lugar y la fecha</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#convertir">
+              <h6>Conviértete en orador</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">
+              <h6>Comprar tickets</h6>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Formulario de compra de tickets-->
+  <main>
+    <section>
+      <div class="caja-main">
+        <ul class="categorias">
+          <li class="categoria">
+            <div class="categoria-info">
+              <h2 class="categoria-nombre">Estudiante</h2>
+              <p class="categoria-descripcion">Tienen un descuento</p>
+              <p class="categoria-porcentaje">80%</p>
+              <p class="categoria-requisitos">* presentar documentación</p>
+            </div>
+          </li>
+          <li class="categoria">
+            <div class="categoria-info">
+              <h2 class="categoria-nombre">Trainee</h2>
+              <p class="categoria-descripcion">Tienen un descuento</p>
+              <p class="categoria-porcentaje">50%</p>
+              <p class="categoria-requisitos">* presentar documentación</p>
+            </div>
+          </li>
+          <li class="categoria">
+            <div class="categoria-info">
+              <h2 class="categoria-nombre">Junior</h2>
+              <p class="categoria-descripcion">Tienen un descuento</p>
+              <p class="categoria-porcentaje">15%</p>
+              <p class="categoria-requisitos">* presentar documentación</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h6 class="text-center mb-1">VENTA</h6>
+      <h3 class="text-center mt-1 mb-1 valor-ticket">VALOR DE TICKET $200</h3>
+
+      <form>
+        <div class="nombre-apellido col-6">
+          <input type="text" id="nombre" class="input-padron" required placeholder="Nombre">
+          <input type="text" id="apellido" class="input-padron" required placeholder="Apellido">
+        </div>
+
+        <div class="text-center">
+          <input type="email" id="correoelectronico" class="input-padron" required placeholder="Correo">
+        </div>
+
+        <div class="titulo-casillas col-6">
+          <input type="text" id="cantidad" class="input-padron" required placeholder="Cantidad">
+          <input type="text" id="categoria" class="input-padron" required placeholder="Categoria">
+        </div>
+
+        <div class="cantidad-categoria col-6">
+          <input type="text" id="cantidad" class="input-padron" required placeholder="Cantidad">
+          <select id="categoria" class="input-padron" required>
+            <option value="General">General</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="Trainee">Trainee</option>
+            <option value="Junior">Junior</option>
+          </select>
+        </div>
+
+        <div class="monto-total col-6">
+          <input type="text" id="monto" class="input-padron" placeholder="Total a Pagar: $">
+        </div>
+
+
+      </form>
+    </section>
+  </main>
+
+  <!--footer--------------------------------------------------------------------------------------------->
+  <footer class="navbar-fixed-bottom">
+    <div class="container text-center p-3">
+      <div class="row">
+        <div class="col m-auto">
+          Preguntas frecuentes
+        </div>
+        <div class="col m-auto">
+          Contáctanos
+        </div>
+        <div class="col m-auto">
+          Prensa
+        </div>
+        <div class="col m-auto">
+          Conferencias
+        </div>
+        <div class="col m-auto">
+          Términos y condiciones
+        </div>
+        <div class="col m-auto">
+          Privacidad
+        </div>
+        <div class="col m-auto">
+          Estudiantes
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
