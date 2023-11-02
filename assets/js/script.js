@@ -11,9 +11,9 @@ function calcularDescuento() {
     let descuento = 0;
     if (categoria === 'Estudiante') {
         descuento = 0.8;
-    } else if (categoria === 'Junior') {
-        descuento = 0.5;
     } else if (categoria === 'Trainee') {
+        descuento = 0.5;
+    } else if (categoria === 'Junior') {
         descuento = 0.15;
     }
     
