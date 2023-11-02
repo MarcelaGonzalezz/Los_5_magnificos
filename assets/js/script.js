@@ -1,5 +1,5 @@
-let datos = []; // Declarar datos fuera de la función para que mantenga su estado
-let totalCompras = 0; // Declarar totalCompras fuera de la función para que mantenga su estado
+let datos = [];
+let totalCompras = 0; 
 
 function calcularDescuento() {
     let nombre = document.getElementById('nombre').value;
@@ -21,7 +21,7 @@ function calcularDescuento() {
 
     document.getElementById('monto').value = 'Total a Pagar: $' + totalConDescuento.toFixed(2);
     
-    totalCompras += cantidad; // Acumular la cantidad en totalCompras
+    totalCompras += cantidad;
 
     let nuevoDato = {
         nombre: nombre,
@@ -32,7 +32,7 @@ function calcularDescuento() {
         totalConDescuento: totalConDescuento
     };
     
-    datos.push(nuevoDato); // Agregar el nuevo dato al array datos
+    datos.push(nuevoDato);
     console.log("Compras totales: " + totalCompras);
     console.log(datos);
 }
