@@ -6,4 +6,4 @@ Proyecto grupal de Codo A codo
 - Marcela Gonzalez
 - Fausto Becerro
 - Miguel Pedreira
-- LOPEZ, Erick
+- Erick López
